@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 import os
 
-TOKEN = os.getenv("8095702281:AAEi51yxHlvGZyJQP7LEIaddfyuMiAKpPtY")
+TOKEN = os.getenv("BOT_TOKEN")
 
 def start(update: Update, context: CallbackContext) -> None:
     update.message.reply_text("👋 হ্যালো! আমি Railway-তে হোস্ট করা একটি টেলিগ্রাম বট।")
